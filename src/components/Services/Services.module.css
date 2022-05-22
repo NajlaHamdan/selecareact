@@ -1,0 +1,50 @@
+.title {
+  padding-top: 3rem;
+  margin-right: 6.5rem;
+  font-size: 2rem;
+  text-align: right;
+  font-weight: 900;
+  font-size: 3rem;
+}
+.container {
+  background :linear-gradient(#00679e80,#00679eb0),url('/es.jpg') no-repeat bottom ;
+  background-size: cover;
+  color: #fff;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
+.card {
+  /* margin-top: 8rem; */
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* background-color: #FDA925; */
+}
+.service {
+  margin: 1rem;
+  /* text-align: center; */
+  height: 15vh;
+  width: 50vh;
+  /* background-color: #F7F7F7; */
+  /* box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75); */
+  animation: moveInRight 2s;
+  /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+}
+h1 {
+  border-right: 1px solid #fff;
+
+  font-weight: 100;
+  font-size: 3rem;
+}
+/* @keyframes moveInRight {
+  0% {
+    transform: translateX(-40%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+} */

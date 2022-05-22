@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* text-align: center; */
+  /* margin-top:100vh ; */
+}
+.card {
+  /* text-align: center; */
+  padding: 4%;
+}
+.card:hover {
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: #e9412b80;
+}
+.icon {
+  text-align: center;
+}
