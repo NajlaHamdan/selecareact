@@ -1,9 +1,7 @@
 import React from "react";
 import classes from "./Footer.module.css";
-import { BsLinkedin } from "react-icons/bs";
 import { FaPhoneSquare } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import { MdEmail } from "react-icons/md";
 import { Fade } from "react-awesome-reveal";
 export default function Footer() {
   const contact = [
@@ -45,16 +43,16 @@ export default function Footer() {
             {/* <div className={classes.contact}> */}
             {contact.map((social, index) => {
               return (
-                <div key={index}>
-                  {social.type == "mail" ? (
+                <div  key={index}>
+                  {social.type === "mail" ? (
                     <a href="mailto:info@Silicsandco.com">{social.icon}</a>
                   ) : (
-                    <>
+                    <div className={classes.item}>
                       <p>{social.icon}</p>
                       <IconContext.Provider value={{ display: "inline" }}>
                         <FaPhoneSquare />
                       </IconContext.Provider>
-                    </>
+                    </div>
                   )}
                 </div>
               );

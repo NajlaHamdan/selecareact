@@ -1,12 +1,15 @@
+.container {
+  position: relative;
+}
 .card {
   padding-left: 2rem;
-  background-color: #ffff;
+  /* background-color: rgb(210, 210, 210); */
   display: flex;
   flex-direction: row-reverse;
+  /* flex-wrap: wrap; */
   align-items: center;
   text-align: right;
   margin: 20vh;
-  position: relative;
 }
 .rightImg img {
   width: 30vw;
@@ -15,14 +18,14 @@
 .blueRight {
   width: 15vw;
   position: absolute;
-  top: 130vh;
+  top: 10vh;
   right: -8vh;
   transform: rotate(-90deg);
 }
 .redRight {
   width: 15vw;
   position: absolute;
-  top: 150vh;
+  top: 30vh;
   right: -8vh;
   transform: rotate(-90deg);
 }
@@ -30,7 +33,7 @@
 .blueLeft {
   width: 15vw;
   position: absolute;
-  top: 150vh;
+  top: 30vh;
   left: -8vh;
   transform: rotate(-90deg);
 }
@@ -38,7 +41,7 @@
 .redLeft {
   width: 15vw;
   position: absolute;
-  top: 130vh;
+  top: 10vh;
   left: -8vh;
   transform: rotate(-90deg);
 }

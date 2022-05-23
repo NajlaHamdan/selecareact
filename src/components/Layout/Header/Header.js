@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Header.module.css";
-import { GrMenu } from "react-icons/gr";
 import Menu from "./../../Menu/Menu";
 export default function Header() {
   return (
@@ -18,13 +17,13 @@ export default function Header() {
         {/* <div className={classes.card}> */}
         <div className={classes.left}>
           <div className={classes.box}>
-              <div className={classes.title}>
-          <p>سليكا ساند للمقاولات</p>
-          </div>
-              <div className={classes.sub}>
-          <p>الإنتاج بشغف والبسمة بلطف</p>
-          </div>
-          {/* <div className={classes.button}>
+            <div className={classes.title}>
+              <p>سليكا ساند للمقاولات</p>
+            </div>
+            <div className={classes.sub}>
+              <p>الإنتاج بشغف والبسمة بلطف</p>
+            </div>
+            {/* <div className={classes.button}>
             <button>المزيد</button>
           </div> */}
           </div>
@@ -34,7 +33,7 @@ export default function Header() {
         </div>
         <div className={classes.right}>
           <div className={classes.backgroun}>
-            <img src='./case.png' alt="" />
+            <img src="./case.png" alt="" />
           </div>
         </div>
       </div>

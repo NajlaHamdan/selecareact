@@ -3,7 +3,7 @@ import classes from "./Aboute.module.css";
 import Reveal from "react-awesome-reveal";
 export default function Aboute() {
   return (
-    <>
+    <div className={classes.container}>
       <div className={classes.card}>
         {/* <Reveal> */}
         <div className={classes.rightImg}>
@@ -43,6 +43,6 @@ export default function Aboute() {
           alt="logoborder"
         />
       </div>
-    </>
+    </div>
   );
 }

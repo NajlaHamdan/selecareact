@@ -28,7 +28,7 @@
   top: 0rem;
 }
 .header .logo img {
-  height: 8rem;
+  width: 8rem;
 }
 /* .header .breaker img {
   background: red;
@@ -60,9 +60,9 @@
   left: 40%;
   text-align: center;
   transform: translate(-50%, -50%);
+  font-family: "Kufam", sans-serif;
 }
 .title {
-  font-family: "Kufam", sans-serif;
   font-size: 6rem;
   font-weight: 900;
   animation: moveInLeft 2s;
@@ -80,7 +80,8 @@
 }
 
 .sub {
-  font-weight: 200;
+  /* font-weight: 100; */
+  font-size: 2rem;
   margin-top: 2rem;
   animation: moveInRight 2s;
 }
@@ -142,6 +143,8 @@ button:hover {
 }
 .backgroun img {
   position: absolute;
+  top: -5%;
   right: 0.5%;
-  width: 120vh;
+  height: 100vh;
+  width: 60vw;
 }

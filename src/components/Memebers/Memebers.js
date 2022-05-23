@@ -5,7 +5,7 @@ import { keyframes } from "@emotion/react";
 export default function Memebers() {
   const memebers = [
     {
-      img: "./logo.jpeg",
+      img: "./logo.jpg",
       title: "memeber1",
     },
     {

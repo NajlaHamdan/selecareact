@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 // import logo from "../../../public/seleca.jpeg";
 export default function MainNavigation() {

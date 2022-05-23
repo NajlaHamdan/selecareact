@@ -3,18 +3,26 @@ import classes from "./Product.module.css";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 export default function Product() {
-  const Product = [
+  const Products = [
     {
-      title: "رمل السليكا منخفض النسبة بأحجام مختلفة",
+      title: "رمل السليكا ",
+      desription: "منخفض النسبة و بأحجام مختلفة (2مل -3مل -4مل)",
+      img: "/silicaSand.jpg",
     },
     {
-      title: "رمل أبيض بأحجام مختلفة",
+      title: "رمل أبيض",
+      desription: "(أحجام مختلفة ( 3مل -4مل",
+      img: "/whiteSand.jpg",
     },
     {
-      title: "رمل أحمر بأحجام مختلفة",
+      title: "رمل أحمر ",
+      desription: "(أحجام مختلفة (3مل -4مل",
+      img: "/redSand.jpg",
     },
     {
       title: "إنشاء كسارات",
+      desription: "",
+      img: "/es.jpg",
     },
   ];
   const customAnimation = keyframes`
@@ -31,16 +39,19 @@ export default function Product() {
     <div>
       <Reveal keyframes={customAnimation} duration={2000}>
         <div className={classes.container}>
-          <p className={classes.title}>منتجاتنا</p>
+          <p className={classes.heading}>منتجاتنا</p>
           <div className={classes.card}>
-            {Product.map((service, index) => {
+            {Products.map((product, index) => {
               return (
-                <div className={classes.service} key={index}>
-                  <h1>{service.title}</h1>
+                <div className={classes.product} key={index}>
+                  <img src={product.img} alt={product.title} />
+                  <h1>{product.title}</h1>
+                  {/* <p>{product.desription}</p> */}
                 </div>
               );
             })}
           </div>
+          <div className={classes.background}></div>
         </div>
       </Reveal>
     </div>
