@@ -25,15 +25,13 @@ export default function Menu() {
       {menu.map((item, index) => {
         return (
           <div className={classes.card} key={index}>
-            <div>
-              <div className={classes.icon}>
-                <Icon as={item.icon} />
-              </div>
-              <div className="text">
-                <p>{item.title}</p>
-              </div>
-              {/* <div className="polygon"><p></p></div> */}
+            <div className={classes.icon}>
+              <Icon as={item.icon} />
             </div>
+            <div className="text">
+              <p>{item.title}</p>
+            </div>
+            {/* <div className="polygon"><p></p></div> */}
           </div>
         );
       })}
