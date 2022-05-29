@@ -8,10 +8,16 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <div id="Service">
+        <Services />
+      </div>
+      <div id="Product">
+        <Product />
+      </div>
+      <div id="Aboute">
+        <Aboute />
+      </div>
 
-      <Services />
-      <Product />
-      <Aboute />
       {/* <Memebers /> */}
     </div>
   );

@@ -8,15 +8,18 @@ export default function Menu() {
   const menu = [
     {
       icon: MdOutlineMiscellaneousServices,
-      title: "Services",
+      title: "خدماتنا",
+      id: "#Service",
     },
     {
       icon: RiShoppingCart2Line,
-      title: "Products",
+      title: "منتجاتنا",
+      id: "#Product",
     },
     {
       icon: FaUserFriends,
-      title: "Partenars",
+      title: "من نحن",
+      id: "#Aboute",
     },
   ];
 
@@ -25,12 +28,14 @@ export default function Menu() {
       {menu.map((item, index) => {
         return (
           <div className={classes.card} key={index}>
-            <div className={classes.icon}>
-              <Icon as={item.icon} />
-            </div>
-            <div className="text">
-              <p>{item.title}</p>
-            </div>
+            <a href={item.id}>
+              <div className={classes.icon}>
+                <Icon as={item.icon} />
+              </div>
+              <div className="text">
+                <p>{item.title}</p>
+              </div>
+            </a>
             {/* <div className="polygon"><p></p></div> */}
           </div>
         );

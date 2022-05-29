@@ -5,7 +5,7 @@
   width: 100%;
 }
 .card {
-  width: 9vw;
+  width: 5vw;
   margin: 0 2vh;
   min-width: 150px;
   padding: 1vw;
@@ -21,6 +21,10 @@
   cursor: pointer;
   border-radius: 1rem;
   background-color: #e9412b80;
+}
+a {
+  color: #1b2d51;
+  text-decoration: none;
 }
 /* .icon {
   display: flex;
