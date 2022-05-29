@@ -9,7 +9,7 @@
   /* flex-wrap: wrap; */
   align-items: center;
   text-align: right;
-  margin: 20vh;
+  margin: 20vw;
 }
 .rightImg img {
   width: 30vw;
@@ -19,14 +19,14 @@
   width: 15vw;
   position: absolute;
   top: 10vh;
-  right: -8vh;
+  right: -8vw;
   transform: rotate(-90deg);
 }
 .redRight {
   width: 15vw;
   position: absolute;
   top: 30vh;
-  right: -8vh;
+  right: -8vw;
   transform: rotate(-90deg);
 }
 
@@ -34,7 +34,7 @@
   width: 15vw;
   position: absolute;
   top: 30vh;
-  left: -8vh;
+  left: -8vw;
   transform: rotate(-90deg);
 }
 
@@ -42,6 +42,6 @@
   width: 15vw;
   position: absolute;
   top: 10vh;
-  left: -8vh;
+  left: -8vw;
   transform: rotate(-90deg);
 }

@@ -125,11 +125,6 @@ button {
     transform: translateY(0rem);
   }
 }
-
-button:hover {
-  transform: scale(1.5);
-}
-
 .menu {
   position: absolute;
   width: 35vw;
@@ -150,9 +145,25 @@ button:hover {
   height: 650px;
   width: 60vw;
 }
+/* 600px or smaller */
+/* @media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .right {
+    display: none;
+  }
+  .left {
+    text-align: center;
+  }
+  
+} */
+
+
 @media only screen and (max-width: 600px) {
   body {
-    overflow-x: hidden;}
+    overflow-x: hidden;
+  }
   .right {
     display: none;
   }
@@ -166,7 +177,7 @@ button:hover {
     left: 25vh;
     /* transform: translate(-50%, -50%); */
   }
-  .menu{
+  .menu {
     position: absolute;
     left: -10%;
   }
