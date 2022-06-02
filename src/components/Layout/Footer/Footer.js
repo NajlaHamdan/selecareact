@@ -9,7 +9,6 @@ export default function Footer() {
       type: "phone",
       icon: "0543941993",
     },
-    { type: "phone", icon: "0509991169" },
     { type: "phone", icon: "0533245454" },
     // { type: "web", icon: "Silicsandco.com" },
     { type: "mail", icon: "info@Silicsandco.com" },
@@ -43,7 +42,7 @@ export default function Footer() {
             {/* <div className={classes.contact}> */}
             {contact.map((social, index) => {
               return (
-                <div  key={index}>
+                <div key={index}>
                   {social.type === "mail" ? (
                     <a href="mailto:info@Silicsandco.com">{social.icon}</a>
                   ) : (

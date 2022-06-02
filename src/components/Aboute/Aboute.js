@@ -5,13 +5,12 @@ export default function Aboute() {
   return (
     <div className={classes.container}>
       <div className={classes.card}>
-        {/* <Reveal> */}
         <div className={classes.rightImg}>
           <img src="./seleca.png" alt="logo" />
         </div>
-        <Reveal>
-          <div>
-            <h2 className={classes.title}>سليكا ساند للمقاولات</h2>
+        {/* <Reveal> */}
+          <div className={classes.backImg}>
+            <h2 className={classes.heading}>سليكا ساند للمقاولات</h2>
             <p>
               شركة سليكا ساند للمقاولات هي شركة تأسست عام 1424 هجرية، ومن هنا
               انطلقت بخطى حثيثة نحو التميز والرقي وذلك باتباع أفضل الطرق لإنتاج
@@ -19,9 +18,9 @@ export default function Aboute() {
               بالمجمعة، وتعبئتها وتنظيفها وبيعها بشكل أجود وأنظف وبأسعار مميزة.
             </p>
           </div>
-        </Reveal>
+        {/* </Reveal> */}
       </div>
-      <div>
+      {/* <div>
         <img
           className={classes.blueRight}
           src="./selecaborder.png"
@@ -44,7 +43,7 @@ export default function Aboute() {
           src="./selecared.png"
           alt="logoborder"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

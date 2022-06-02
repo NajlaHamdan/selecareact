@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+  margin-top: 4%;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4vh;
+}
+.product {
+  padding: 3rem;
+  margin-bottom: 1rem;
+  /* text-align: center; */
+  height: 20%;
+  width: 40vh;
+  background-color: #f7f7f7;
+  /* box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75); */
+  animation: moveInRight 2s;
+  /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+}
+.product img {
+  width: 100%;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.background {
+  background-color: #1b2d51b9;
+  height: 20vh;
+  width: 120%;
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  z-index: -1;
+}
+.heading {
+  padding-bottom: 3rem;
+  /* margin-right: 6.5rem; */
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: "Kufam";
+}
+
+.modal {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal > div {
+  width: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formImg img {
+  width: 100%;
+  transform: rotate(90deg);
+}
+select,
+input,
+button,
+label {
+  display: block;
+  /* margin-top: 1%; */
+  font-size: 2rem;
+  text-align: right;
+}
+label {
+  margin-bottom: 4%;
+}
+input {
+  border: none;
+  border-bottom: #9c9898 2px solid;
+  margin-top: 14%;
+  padding: 2%;
+}
+select {
+  padding: 2%;
+  width: 16.5vw;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 10%;
+  gap: 2rem;
+}
+button {
+  /* padding: 0.7rem 1.6rem; */
+  /* border-radius: 5rem; */
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #232222;
+  background: rgba(255, 255, 255, 0);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  /* border-radius: 2.8rem; */
+  /* font-family: Arial; */
+  color: #101010;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  /* border: none; */
+  cursor: pointer;
+  /* animation: moveInTop 2s; */
+}
+button:hover {
+  background-color: #1b2d51;
+  color: #fff;
+}
+
+.cancelButton:hover {
+  background-color: #cc2a2d;
+  color: #fff;
+}

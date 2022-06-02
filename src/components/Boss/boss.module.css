@@ -1,0 +1,75 @@
+.container {
+  margin-top: 4%;
+  padding: 2%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;
+  /* background-color: #efefef; */
+}
+.heading {
+  padding-bottom: 3rem;
+  /* margin-right: 6.5rem; */
+  /* font-size: 2rem; */
+  text-align: center;
+  /* font-weight: 100; */
+  font-size: 3rem;
+  font-family: "Kufam";
+}
+.container > div {
+  width: 45vw;
+}
+.desc {
+  text-align: right;
+}
+.circleImg {
+  position: absolute;
+  z-index: 1;
+  top: 10vw;
+  width: 50vw;
+  height: 50vh;
+  
+}
+.circleImg img {
+  margin-left: 8vw;
+  border-radius: 60%;
+  width: 50%;
+  height: 100%;
+  border:solid #cfc9c9 5px
+}
+.redCircle {
+  margin-left: 10vw;
+  width: 20vw;
+  height: 20vw;
+  background-color: #e9412b;
+  border-radius: 50%;
+  /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+  /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+}
+.blueCircle {
+  margin-left: 2vw;
+  width: 20vw;
+  height: 20vw;
+  background-color: #1b2d51;
+  border-radius: 50%;
+  /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%) */
+  /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+}
+/* .smallBlue,.smallRed{
+  display: inline;
+} */
+.smallRed {
+  margin-left: -2vw;
+  width: 10vw;
+  height: 10vw;
+  background-color: #e9412b25;
+  border-radius: 50%;
+}
+.smallBlue {
+  margin-left: 12vw;
+  width: 10vw;
+  height: 10vw;
+  background-color: #1b2d5125;
+  border-radius: 50%;
+}

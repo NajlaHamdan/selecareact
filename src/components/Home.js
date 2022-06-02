@@ -3,7 +3,8 @@ import Services from "./Services/Services";
 import Header from "./Layout/Header/Header";
 // import Memebers from "./Memebers/Memebers";
 import Aboute from "./Aboute/Aboute";
-import Product from "./Product/Product";
+import ProductList from "./ProductList";
+import Boss from './Boss'
 export default function Home() {
   return (
     <div>
@@ -12,12 +13,14 @@ export default function Home() {
         <Services />
       </div>
       <div id="Product">
-        <Product />
+        <ProductList />
       </div>
       <div id="Aboute">
         <Aboute />
       </div>
-
+      <div id="Boss">
+        <Boss />
+      </div>
       {/* <Memebers /> */}
     </div>
   );

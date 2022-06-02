@@ -1,17 +1,40 @@
 .container {
   position: relative;
-  padding: 10rem;
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 10rem; */
+  /* background-image: url(es.jpg); */
   /* align-items: center; */
+  /* background: linear-gradient(to right top,#58aea5,#1b2d51); */
 }
 .card {
   /* padding-left: .1rem; */
-  /* background-color: rgb(210, 210, 210); */
+  /*  */
+  /* background: rgba(245, 245, 245, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(243, 243, 243, 0.4); */
+  /*  */
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
   /* flex-wrap: wrap; */
-  /* align-items: center; */
+  align-items: center;
   /* margin: 15vw; */
+}
+.heading {
+  padding-bottom: 3rem;
+  /* margin-right: 6.5rem; */
+  /* font-size: 2rem; */
+  text-align: center;
+  /* font-weight: 100; */
+  font-size: 3rem;
+  font-family: "Kufam";
 }
 
 .card div {
@@ -22,7 +45,7 @@
 }
 .rightImg img {
   /* width: 30vw; */
-  width: 350px;
+  width: 550px;
   /* margin-left: 8rem; */
 }
 
@@ -56,6 +79,10 @@
   left: -8vw;
   transform: rotate(-90deg);
 }
+
+/* .backImg {
+  background-image: url('./border.png');
+} */
 /* @media (max-width: 800px) {
   .card{
     flex-direction: column;

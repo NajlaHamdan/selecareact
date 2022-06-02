@@ -2,33 +2,32 @@ import React from "react";
 import classes from "./Product.module.css";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-export default function Product() {
+import Product from "./Product.js";
+export default function ProductList() {
   const Products = [
     {
       title: "رمل السليكا ",
       desription: "منخفض النسبة و بأحجام مختلفة (2مل -3مل -4مل)",
+      size: [2, 3, 4],
       img: "/silicaSand.jpg",
     },
     {
-      title: "رمل أبيض",
+      title: "حجر المرو",
       desription: "(أحجام مختلفة ( 3مل -4مل",
-      img: "/whiteSand.jpg",
+      size: [3, 4],
+      img: "/mroStone.jpg",
     },
     {
       title: "رمل أحمر ",
       desription: "(أحجام مختلفة (3مل -4مل",
+      size: [3, 4],
       img: "/redSand.jpg",
-    },
-    {
-      title: "إنشاء كسارات",
-      desription: "",
-      img: "/es.jpg",
     },
   ];
   const customAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(-200px, -100px, 0);
+    transform: translate3d(200px, -100px, 0);
   }
 
   to {
@@ -43,11 +42,13 @@ export default function Product() {
           <div className={classes.card}>
             {Products.map((product, index) => {
               return (
-                <div className={classes.product} key={index}>
-                  <img src={product.img} alt={product.title} />
-                  <h1>{product.title}</h1>
-                  {/* <p>{product.desription}</p> */}
-                </div>
+                <Product
+                  key={index}
+                  title={product.title}
+                  desription={product.desription}
+                  size={product.size}
+                  img={product.img}
+                />
               );
             })}
           </div>

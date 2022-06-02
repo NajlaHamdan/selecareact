@@ -18,7 +18,12 @@ export default function Services() {
     },
     {
       id: "04",
-      title: "تطوير وتسوير المخططات",
+      title: "تطوير البنية التحتية للأراضي الخام",
+    },
+    {
+      title: "تركيب كسارات",
+      desription: "",
+      id: "05",
     },
   ];
   const customAnimation = keyframes`
