@@ -4,12 +4,12 @@ export default function Boss() {
     <div className={classes.container}>
       <div>
         <div className={classes.circleImg}>
-          <img src="personal.jpg" alt="boss" />
+          <img src="user.jpg" alt="boss" />
         </div>
-        <div className={classes.redCircle}></div>
+        {/* <div className={classes.redCircle}></div> */}
         {/* <div className={classes.smallRed}></div>
         <div className={classes.smallBlue}></div> */}
-        <div className={classes.blueCircle}></div>
+        {/* <div className={classes.blueCircle}></div> */}
       </div>
       <div className={classes.desc}>
         <h2 className={classes.heading}>رئيس مجلس الأدارة</h2>

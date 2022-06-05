@@ -5,6 +5,7 @@ import Header from "./Layout/Header/Header";
 import Aboute from "./Aboute/Aboute";
 import ProductList from "./ProductList";
 import Boss from './Boss'
+import Certifications from "./Certifications";
 export default function Home() {
   return (
     <div>
@@ -20,6 +21,9 @@ export default function Home() {
       </div>
       <div id="Boss">
         <Boss />
+      </div>
+      <div id="Certifications">
+        <Certifications />
       </div>
       {/* <Memebers /> */}
     </div>

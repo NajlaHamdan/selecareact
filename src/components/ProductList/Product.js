@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Product.module.css";
 import { Box, Typography, Modal } from "@mui/material";
+import Swal from "sweetalert2";
 const style = {
   position: "absolute",
   top: "50%",
@@ -19,11 +20,19 @@ export default function Product(props) {
   const handleClose = () => setOpen(false);
   const { title, desription, size, img } = props;
   function btnClick() {
+    // e.preventDefault();
     console.log("btnClick");
-    if (!validData()) {
-      console.log("if condition");
-      return false;
-    }
+    // if (!validData()) {
+    //   console.log("if condition");
+    //   return false;
+    // }
+    Swal.fire({
+      title: "تم إسال الطلب بنجاح",
+      icon: "success",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    setOpen(false);
   }
   function validData() {}
   return (
@@ -36,7 +45,7 @@ export default function Product(props) {
           <Modal
             open={open}
             onClick={handleClose}
-            // onClose={handleClose}
+            onClose={handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
           >
@@ -47,7 +56,7 @@ export default function Product(props) {
                   <img src={img} alt="title" />
                 </div>
                 <div>
-                  <form>
+                  <form onSubmit={btnClick}>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                       <p className={classes.heading}>{title}</p>
                       {/* <ModalHeader>{title}</ModalHeader> */}
@@ -61,7 +70,11 @@ export default function Product(props) {
                         })}
                       </select>
                       {/* <label>الكمية</label> */}
-                      <input placeholder="الكمية" type="number" required />
+                      <input
+                        placeholder=" الكمية بالطن"
+                        type="number"
+                        required
+                      />
                       {/* <label>الأيميل</label> */}
                       <input placeholder="الأيميل" type="email" required />
                       {/* <label>رقم الجوال</label> */}
@@ -71,11 +84,7 @@ export default function Product(props) {
 
                     {/* <ModalFooter> */}
                     <div className={classes.buttons}>
-                      <button
-                        className={classes.orderButton}
-                        type="submit"
-                        onclick="return btnClick();"
-                      >
+                      <button className={classes.orderButton} type="submit">
                         إرسال الطلب
                       </button>
                       <button

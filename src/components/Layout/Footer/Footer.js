@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
           <div className={classes.column}>
             <div className={classes.contact}>
-              <p> جميع الحقوق محفوظة للشركة سليكا ساند للمقاولات 2022 &copy;</p>
+              <p> جميع الحقوق محفوظة لشركة سليكا ساند للمقاولات 2022 &copy;</p>
             </div>
           </div>
         </div>

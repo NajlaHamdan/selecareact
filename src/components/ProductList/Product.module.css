@@ -81,7 +81,7 @@ label {
 }
 input {
   border: none;
-  border-bottom: #9c9898 2px solid;
+  border-bottom: #9c9898 .2rem solid;
   margin-top: 14%;
   padding: 2%;
 }

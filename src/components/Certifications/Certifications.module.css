@@ -1,0 +1,57 @@
+.heading {
+  padding-bottom: 3rem;
+  /* margin-right: 6.5rem; */
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 100;
+  font-size: 3rem;
+  font-family: "Kufam";
+}
+.container {
+  margin-top: 4%;
+}
+.card {
+  /* margin-top: 8rem; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: #FDA925; */
+}
+.service {
+  padding: 4rem;
+  margin-bottom: 1rem;
+  /* text-align: center; */
+  /* height: 30%; */
+  width: 50vh;
+  /* background-color: #f7f7f7; */
+  /* box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75); */
+  animation: moveInRight 2s;
+}
+.title {
+  font-weight: 100;
+  margin-top: 5vh;
+  font-size: 2.5rem;
+}
+.blue {
+  background-color: #55688B;
+}
+.red {
+  background-color: #8B2618;
+}
+.lightRed {
+  background-color: #F3C0BA;
+}
+.lightBlue {
+  background-color: #B3C4E5;
+}
+/* @keyframes moveInRight {
+    0% {
+      transform: translateX(-40%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  } */
