@@ -32,9 +32,11 @@ export default function Product(props) {
       showConfirmButton: false,
       timer: 1500,
     });
+    // setOpen(false);
+  }
+  function validData() {
     setOpen(false);
   }
-  function validData() {}
   return (
     <div>
       <div className={classes.product} onClick={handleOpen}>
@@ -89,7 +91,7 @@ export default function Product(props) {
                       </button>
                       <button
                         className={classes.cancelButton}
-                        onClose={handleClose}
+                        onClick={validData}
                       >
                         إلغاء
                       </button>
